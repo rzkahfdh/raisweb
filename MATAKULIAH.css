@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background: url("bgrais.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.container {
+    margin: 20px;
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e8, #9b66);
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0.5px 10px #fefeff;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.container .title {
+    color: #fefeff;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 200px;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e8, #9b66);
+}
+
+.content .user-details .details {
+    color: #202060;
+}
+
+.container .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input {
+    margin-bottom: 15px;
+    width: calc(100%/2-20px);
+}
+
+form .input span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #71b7e8;
+    border-bottom-width: 2px;
+    transition: all o.3s ease;
+}
+
+.user-details .input input:focus,
+.user-details .input input:valid {
+    border-color: aquamarine;
+}
+
+.container button {
+    position: relative;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid rgb(249, 249, 249);
+    background: transparent;
+    color: rgb(249, 249, 249);
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.container button:hover {
+    background: rgb(17, 208, 46);
+}
+
+.container .home button {
+    position: relative;
+    background: transparent;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: rgb(249, 249, 249);
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.container .home button:hover {
+    background: red;
+}

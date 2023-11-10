@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background: url("bgrais.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.container{
+    border: solid rgb(201, 205, 202);
+    border-radius: 0.4rem;
+    margin:20px;
+}
+
+.container .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+    color: aliceblue;
+    background-color: rgb(78, 20, 20);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .header{
+    text-align: center;
+}
+
+.container .judul{
+        color: aliceblue;
+        text-align: center;
+        margin: 5px 4px;
+        font-style: bold;
+}
+
+.container button{
+    position: relative;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid rgb(249, 249, 249);
+    background: transparent;
+    color: rgb(249, 249, 249);
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.container button span{
+    /* background: rgb(249, 249, 249); */
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container .ig button{
+    background: transparent;
+    margin-left: 235px;
+}
+
+.container .ig button:hover{
+    background: blue;
+}
+
+.container button::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+
+}
+
+.container button:hover{
+    background: red;
+}
